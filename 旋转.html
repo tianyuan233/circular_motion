@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS实现圆周运动小球</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style type='text/css'>
+    .class_ball {
+      width: 100px;
+      height: 100px;
+      background-image: url(./huaji.jpg);
+      background-size: contain;
+      border-radius: 4px;
+      box-shadow: 0 0 7px #FFFFFF;
+      left: 400px;
+      top: 400px;
+      position: absolute;
+      animation: action2 3s linear infinite;
+    }
+
+    @keyframes action1 {
+      from {
+        transform: rotate(0deg) translate(300px) rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg) translate(300px) rotate(-360deg);
+      }
+    }
+
+    @keyframes action2 {
+      from {
+        transform: rotate(0deg) translate(300px);
+      }
+
+      to {
+        transform: rotate(360deg) translate(300px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="class_ball"></div>
+</body>
+
+</html>
